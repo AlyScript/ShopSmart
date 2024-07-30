@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<html>
+
+    <head>
+        <title>My Basket</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="basket_styles.css">
+        <scipt src="searchPopulate.js">
+    </head>
+
+    <body>
+        <!-- Part 1: Display boxes-->
+         <div class="container-fluid" style="width: 80%">
+            <div class="row gx-5" style="padding-top: 20px">
+                <div class="col">
+                    <div id = "tesco_count" class="p-3 border bg-white">
+                        <img src = "tesco.svg" alt = "Clubcard Image" width = '40' height = '40'>
+                        0 Items
+                    </div>      
+                </div>
+                <div class="col">
+                    <div id="sainsburys_count" class="p-3 border bg-white">
+                        <img src="sainsburysLogo2.jpg" alt="Sainsburys Image" width='40' height='40'>
+                        <span id="sainsburys_count_text">0 Items</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="aldi_count" class="p-3 border bg-white">
+                        <img src="aldi.png" alt="Aldi Image" width='40' height='40'>
+                        <span id="aldi_count_text">0 Items</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="totalPriceBox" class="p-3 border bg-white" style="font-size: 26px;">
+                        Total: <b id="totalPrice">&pound;0.00</b>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: white; height: 60px;"></div>
+
+                <div class="checkout-button-container" style="text-align: center; margin-top: 20px;">
+                    <button onclick="redirect()" class="checkout-button" style="font-size: 20px; padding: 10px 20px;">Checkout</button>
+                </div>
+        </div>
+        <div style = "background-color: white; height: 60px;"></div>
+
+        <!-- Part 2: Index -->
+        <div class = "container-fluid" style = "width: 80%">
+       </div>
+        <hr>
+
+        <!-- Part 3: Item -->
+        <div id="items" class="container-fluid" style="width: 80%"></div>
+
+        <!-- Item 1
+        <div class = "container-fluid" style = "width: 80%">
+            <div class="image-box">
+                <img src="vodka.png" alt = "Vodka" width = '120' height = '150' style = "display: block; margin-left: auto; margin-right: auto">
+            </div>
+            <div class="item-box">
+                <br>
+                <b><h1 style= "font-size: 25px; padding-left: 20px">Ciroc</h1></b>
+                <span style= "font-size: 20px; padding-left: 20px">Premium Vodka</span><br><br>
+            </div>
+            <div class="supplier-box">
+                <img src="Amazon_image.png" alt = "Amazon Image" width = '60' height = '60' style = "display: block; margin: auto">
+            </div>
+            <div class="quantity-box" style="padding-top: 40px; padding-left: 75px;">
+                <button type = "button" onclick = "decrementValue('quantity1')" class = "item-count-button" style = "background-color: black; color: white">-</button>
+                <input type="number" id="quantity1" name="quantity1" value="0" min="0" max="9" style = "height: 50px; width: 50px; font-size: 30px; text-align: center;">
+                <button type = "button" onclick = "incrementValue('quantity1')" class = "item-count-button">+</button>
+            </div>
+            <div class="price-box">
+                <b><p id="quantity1Price">&pound;0.00</p></b>
+            </div>
+        </div>
+        <hr> -->
+
+        <!-- Item 2 -->
+        <!-- <div class = "container-fluid" style = "width: 80%">
+            <div class="image-box">
+                <img src="vodka.png" alt = "Vodka" width = '120' height = '150' style = "display: block; margin-left: auto; margin-right: auto">
+            </div>
+            <div class="item-box">
+                <br>
+                <b><h1 style= "font-size: 25px; padding-left: 20px">Ciroc</h1></b>
+                <span style= "font-size: 20px; padding-left: 20px">Premium Vodka</span><br><br>
+            </div>
+            <div class="supplier-box">
+                <img src="Amazon_image.png" alt = "Amazon Image" width = '60' height = '60' style = "display: block; margin: auto">
+            </div>
+            <div class="quantity-box" style="padding-top: 40px; padding-left: 75px;">
+                <button type = "button" onclick = "decrementValue('quantity2')" class = "item-count-button" style = "background-color: black; color: white">-</button>
+                <input type="number" id="quantity2" name="quantity2" value="0" min="0" max="9" style = "height: 50px; width: 50px; font-size: 30px; text-align: center;">
+                <button type = "button" onclick = "incrementValue('quantity2')" class = "item-count-button">+</button>
+            </div>
+            <div class="price-box">
+                <b><p id="quantity2Price">&pound;0.00</p></b>
+            </div>
+        </div>
+        <hr> -->
+
+        <!-- Item 3 -->
+        <!-- <div class = "container-fluid" style = "width: 80%">
+            <div class="image-box">
+                <img src="vodka.png" alt = "Vodka" width = '120' height = '150' style = "display: block; margin-left: auto; margin-right: auto">
+            </div>
+            <div class="item-box">
+                <br>
+                <b><h1 style= "font-size: 25px; padding-left: 20px">Ciroc</h1></b>
+                <span style= "font-size: 20px; padding-left: 20px">Premium Vodka</span><br><br>
+            </div>
+            <div class="supplier-box">
+                <img src="Amazon_image.png" alt = "Amazon Image" width = '60' height = '60' style = "display: block; margin: auto">
+            </div>
+            <div class="quantity-box" style="padding-top: 40px; padding-left: 75px;">
+                <button type = "button" onclick = "decrementValue('quantity3')" class = "item-count-button" style = "background-color: black; color: white">-</button>
+                <input type="number" id="quantity3" name="quantity3" value="0" min="0" max="9" style = "height: 50px; width: 50px; font-size: 30px; text-align: center;">
+                <button type = "button" onclick = "incrementValue('quantity3')" class = "item-count-button">+</button>
+            </div>
+            <div class="price-box">
+                <b><p id="quantity3Price">&pound;0.00</p></b>
+            </div>
+        </div> -->
+    </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<html>
+
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+	<title>Login Page</title>
+</head>
+
+<style>
+/* General styles */
+
+.settings-container {
+    display: flex;
+    background-color: #ffffff; /* Light gray background */
+    overflow: hidden; /* Ensures the border does not exceed the container */
+    margin: auto;
+	max-height: 700px;
+    width: 80%;
+    height: 90%;
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    flex: 1;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.signin-button {
+	height: 50px;
+	width: 100%;
+	color: white;
+	font-family: Avenir-Heavy;
+	font-size: 17px;
+
+	display: flex;
+    justify-content: center;
+    align-items: center;
+
+	border: none;
+	border-radius: 7px;
+}
+
+.login_creds_input {
+	font-family: Avenir;
+	font-size: 15px;
+	color: black;
+
+	
+	background-color: #F7F7F7;
+
+	padding-left: 15px;
+	padding-right: 15px;
+	width: calc(100% - 30px);
+	height: 50px;
+	border: none;
+	border-radius: 7px;
+}
+
+</style>
+	<div style="width: 100%; height: 100vh; display: flex; transform: translateY(-60px);">
+		<div class="settings-container">
+			<!-- Part 1: Login Interface -->
+	        <div class="login-column" style="width: 50%; display: flex; justify-content: center;">
+				<div style="height: 100%; width: calc(100% - 70px); display: flex; flex-direction: column; justify-content: space-between;">
+
+					<div>
+						<p style="margin: 0; padding-top: 40px; font-size: 35px;
+							font-family: 'Cinzel Decorative', serif;
+							font-weight: 700;
+							font-style: normal;
+						">LOGIN</p>
+						<p style="margin: 0; padding-top: 8px; font-size: 17px; font-family: Avenir-Heavy;">Or create an account</p>
+					</div>
+
+					<div>
+						<div type="button" class="signin-button" style="background-color: black;">Sign in with Apple</div>
+						<div type="button" class="signin-button" style="background-color: #5887FF; margin-top: 30px;">Sign in with Google</div>
+					</div>
+
+					<div style="display: flex; align-items: center; width: 100%;">
+						<hr style="border: 0.5px solid rgba(0, 0, 0, 0.12); width: calc((100% - 105px) / 2);">
+						<h5 style="font-size: 15px; font-family: Avenir; color: rgba(0, 0, 0, 0.3);">or</h5>
+						<hr style="border: 0.5px solid rgba(0, 0, 0, 0.12); width: calc((100% - 105px) / 2);">
+					</div>
+
+					<div>
+						<input type="text" id="username" name="username" class="login_creds_input" placeholder="Enter Username">
+						<input type="text" id="password" name="password" class="login_creds_input" placeholder="Enter Password" style="margin-top: 16px;">
+					</div>
+						
+					<div style="display: flex; flex-direction: row; align-items: center; height: 40px; width: 100%; justify-content: space-between; margin-bottom: 80px;">
+						<div style="
+						width: 80px;
+						height: 40px;
+						background-color: black;
+						color: white;
+						font-family: Avenir-Heavy;
+						font-size: 15px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+
+						border: none;
+						border-radius: 5px;
+
+						box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+					">Enter</div>
+
+					<p style="font-family: Avenir-Heavy; font-size: 15px;">Reset Password</p>
+					</div>
+				</div>
+			</div>
+	        <!-- Part 2: SS logo -->
+	        <div class="logo" style= "text-align: center; justify-content: center">
+	        	<img src = "SS_logo.png" alt = "ShopSmart Logo" width = '70' height = '80'>
+	        </div>
+    	</div>
+	</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>

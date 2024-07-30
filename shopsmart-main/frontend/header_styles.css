@@ -1,0 +1,9 @@
+.header_title_off {
+    color: white;
+    opacity: 0.4;
+    font: 18px 'Avenir Heavy', sans-serif;
+}
+
+#header_home_btn, #header_login_btn, #header_dod_btn {
+    transition: opacity 0.1s ease-in-out;
+}
