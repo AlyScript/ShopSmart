@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShopSmart</title>
+<style>
+/* General styles */
+*{
+    margin: 0;
+}
+body {
+    font-family: Avenir, sans-serif;
+    margin: 0px;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.search-bar {
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.images-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.images-row img {
+    max-width: 200px;
+    max-height: 200px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none
+}
+
+.bakery-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom: 15%;
+}
+
+.bakery-button:hover {
+    background-color: black;
+    color: white;
+}
+
+</style>
+
+<script>
+    function redirect() {
+        window.location.href = "index2.html";
+    }
+</script>
+
+</head>
+<body>
+<div class="container">
+    <div style="margin-top:20px;padding-bottom: 20px; background-color: white; box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.2);">
+    <!-- Row 2: Search bar and products -->
+    <center style="padding-top: 20px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><h1><b>Welcome</b></h1></center>
+    <div style="display: flex; justify-content: center; align-items: center; height: 1px; margin-top: 5%; margin-bottom: 5%;">
+        <div style="border-top: 0.5px solid rgba(128, 128, 128, 0.5); width: 80%; opacity: 0.4;"></div>
+    </div>
+    <div class="images-row">
+        <div>
+            <img src="item1.png" alt="Product 1">
+            <center><button class="bakery-button">Bakery</button></center>
+        </div>
+        <div>
+            <img src="item2.png" alt="Product 2">
+           <center> <button class="bakery-button">Fruits and Vegetables</button></center>
+        </div>
+        <div>
+            <img src="item3.png" alt="Product 3">
+           <center> <button class="bakery-button">Packed Food</button></center>
+        </div>
+        <div>
+            <img src="item4.png" alt="Product 4">
+            <center><button class="bakery-button">Self care and products</button></center>
+        </div>
+    </div>
+    </div>
+</div>
+</body>
+</html>

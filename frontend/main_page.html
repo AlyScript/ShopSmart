@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="header_styles.css">
+        <link rel="stylesheet" href="basket_styles.css">
+        <script src="header_actors.js"></script>        
+        <script src="search.js"></script>
+        <script src="searchPopulate.js"></script>
+        <title>ShopSmart</title>
+    </head>
+
+    <body style="padding: 0px; margin: 0;">
+
+        <!-- Header -->
+        <div style = "background-color: black; width: 100%; height: 100px; display: flex; align-items: center; box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3); position: relative; z-index: 1;">
+            <img src="shopsmart_header_icon.png" style="padding-left: 36px; width: 270px; height: 56px;">
+
+            <div style="
+                display: flex;
+                width: 50%;
+                max-width: 600px;
+                margin-right: 50px;
+                margin-left: 30px;
+                position: relative;">
+                <input type="text" id="search_bar" placeholder="Search Products" style="width: 100%; height: 50px; border-radius: 50px; border: none; padding-left: 20px; padding-right: 50px; font-size: 17px; font-family: Avenir; background-color: #212121; color: #FFFFFF;">
+                <img src="search_button.png" style="width: 50px; height: 50px; margin-left: calc(100% - 50px); border-radius: 50px; border: none; 
+                background-color: red; color: #FFFFFF; position: absolute; top: 0; left: 0; cursor: pointer; transition: background-color 0.5s;" 
+                onclick="clearPage(); search().then(() => { populateSearchProducts(); window.addEventListener('scroll', scrollListener); });"></div>
+
+            <div style="display: flex; justify-content: flex-end; margin-left: auto; margin-right: 65px; flex-shrink: 0; cursor: pointer;">
+                <p class="header_title_off" style="padding-right: 100px;" id="header_home_btn" onclick="clearPage(); click_page('home')">Home</p>
+                <p class="header_title_off" style="padding-right: 100px;" id="header_dod_btn" onclick="clearPage(); click_page('bask')">Basket</p>
+                <p class="header_title_off" style="padding-right: 100px;" id="header_set_btn" onclick="clearPage(); click_page('set')">Settings</p>
+                <p class="header_title_off" style="padding-right: 0px;" id="header_login_btn" onclick="clearPage(); click_page('login')">Log In</p>
+            </div>
+        </div>
+
+        <div id="placeholder">
+        </div>
+        <div class="container" style="width: 100%; margin: 0 auto;">
+            <div class="row" id="product-container" style="display: flex; flex-wrap: wrap; justify-content: space-between;"></div>
+        </div>
+    </body>
+</html>

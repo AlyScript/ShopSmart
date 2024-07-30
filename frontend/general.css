@@ -1,0 +1,198 @@
+
+*{
+    margin:0px;
+
+}
+body{
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navbar{
+    display: flex; /* flex dynamically arrange the data, flexible layout*/
+    justify-content: space-between; /* space between the items */
+    align-items: center; /* align the items in the center */
+    background-color: #f7f7f7;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.navbar-a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.navbar-a:hover{
+    text-decoration: underline;
+}
+
+.search-bar{
+    flex: 1;
+    
+}
+
+.search-bar-input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.settings-container {
+    display: flex;
+    min-height: 500px;
+    min-width: 40%;
+    background-color: #F6F6F6;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.options-coloum{
+    flex: 1;
+    padding-right: 20px;
+    border-right: 1px solid black;
+
+}
+
+.options-column-ul{
+    list-style-type: none;
+    padding: 0px;
+}
+
+.options-column-ul-li{
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+
+.option-column-li:hover{
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+.form-column{
+    flex: 2;
+    padding-left: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #c0c1c2;
+    color: #060606;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80px;
+    font-weight:bold;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.settings-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.settings-container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.settings-custom-input {
+    background-color: #D4D4D4;
+    border: none;
+    width: 165px;
+    height: 15px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.settings-container2 {
+    display: flex;
+    min-height: 500px;
+    background-color: #F6F6F6; /* Light gray background */
+    padding: 20px;
+    border-radius: 20px;
+    overflow: hidden; /* Ensures the border does not exceed the container */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.settings-options-column {
+    flex: 1; /* Takes up 1/4 of the container width */
+    padding-right: 20px;
+    padding-left: 20px;
+    border-right: 1px solid black;
+}
+
+.settings-options-column ul {
+    list-style-type: none;
+}
+
+.settings-options-column li {
+    margin-bottom: 10px;
+    cursor: pointer; /* Add cursor pointer */
+}
+
+.settings-options-column li:hover {
+    text-decoration: underline; /* Add underline effect on hover */
+    font-weight: bold; /* Make text bold on hover */
+}
+
+.settings-form-column {
+    flex: 3; /* Takes up 3/4 of the container width */
+    padding-left: 40px;
+}
+
+.settings-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.settings-form input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.settings-button {
+    padding: 10px 20px;
+    background-color: #c0c1c2;
+    color: #060606;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80px;
+    font-weight:bold;
+}
+
+.settings-button:hover {
+    background-color: #0056b3;
+}

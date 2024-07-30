@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 70px;
+}
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.card {
+    flex: 0 0 300px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    background-color: grey;
+}
+.card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.card-text {
+    padding: 20px;
+}
+#image{
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+    height: 200px;
+}
+#logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 40px;
+    margin-top: 30px;
+}
+.navigation{
+    margin-left: 600px;
+    margin-top: 20px;
+}
+#search{
+    margin-left: 400px;
+    width: 500px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
